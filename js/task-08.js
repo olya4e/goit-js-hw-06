@@ -7,6 +7,7 @@ formEl.addEventListener('submit', event => {
   event.preventDefault();
   if (email.value.length === 0 || password.value.length === 0) {
     alert('Всі поля форми повинні бути заповнені');
+    return;
   }
   const userIfo = {
     [email.name]: email.value,
